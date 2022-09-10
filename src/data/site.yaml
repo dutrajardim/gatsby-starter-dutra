@@ -1,0 +1,6 @@
+socials:
+  github:
+    image: ../images/icon-github.svg
+    link: '/#'
+title: Gatsby Starter Dutra
+description: A gatsby starter created for personal needs.

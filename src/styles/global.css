@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger {
+    @apply cursor-pointer;
+}
+
+.hamburger>* {
+    transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hamburger--active .hamburger__top-line {
+    transform: translate(20%, 0%) rotate(45deg);
+    stroke-dasharray: 1;
+}
+
+
+.hamburger--active .hamburger__middle-line {
+    opacity: 0;
+}
+
+.hamburger--active .hamburger__bottom-line {
+    transform: translate(-52%, 30%) rotate(-45deg);
+    stroke-dasharray: 1;
+}
